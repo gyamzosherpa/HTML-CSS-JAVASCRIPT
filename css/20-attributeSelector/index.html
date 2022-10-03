@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Attribute selectors</title>
+    <style>
+      a[target] {
+        background-color: blueviolet;
+        color: aliceblue;
+      }
+
+      a[target='_blank'] {
+        /* background-color: yellow; */
+        color: black;
+      }
+
+      [title~='hello2'] {
+        border: 4px solid green;
+      }
+
+      [title~='hello3'] {
+        border-radius: 50%;
+      }
+
+      /* selects elements with the specified attribute starting with the specified value .i.e top- */
+      [class|='top'] {
+        background-color: rgb(61, 14, 14);
+      }
+
+      /* [class^="top"] {
+    background-color: yellow;
+} */
+    </style>
+  </head>
+  <body>
+    <h1>CSS Attribute</h1>
+    <a href="http://google.com" target="_blank">Google</a>
+    <a href="http://youtube.com">Youtube</a>
+    <a href="http://instagram.com" target="_top">Instagram</a>
+    <a href="http://facebook.com">Facebook</a>
+    <hr />
+    <img
+      src="../../images/image1.jpg"
+      title="hello"
+      alt=""
+      width="400"
+      height="200"
+    />
+    <img
+      src="../../images/image2.jpg"
+      title="hello2"
+      alt=""
+      width="400"
+      height="200"
+    />
+    <img
+      src="../../images/image4.jpg"
+      title="hello3"
+      alt=""
+      width="400"
+      height="200"
+    />
+    <hr />
+    <div>
+      <h1 class="top-header">Welcome</h1>
+      <p class="top-text">Hello world</p>
+      <p class="topContent">Are u learning react?</p>
+    </div>
+  </body>
+</html>

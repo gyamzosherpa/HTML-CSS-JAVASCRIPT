@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>radial</title>
+    <style>
+      .radial1 {
+        height: 5rem;
+        width: 5rem;
+        background: radial-gradient(red, yellow, blue);
+      }
+      .radial2 {
+        height: 5rem;
+        width: 5rem;
+        background: radial-gradient(circle, red 20%, blue 30%);
+      }
+
+      .conic {
+        height: 10rem;
+        width: 10rem;
+        background: conic-gradient(#f00, #0f0, #00f);
+      }
+
+      .conic2 {
+        height: 10rem;
+        width: 10rem;
+        background: conic-gradient(#f00, #0f0, #00f, #ff0, #0ff, #f0f);
+      }
+
+      .conic3 {
+        height: 10rem;
+        width: 10rem;
+        background: conic-gradient(
+          at 60% 45%,
+          #f00 45deg,
+          #0f0 30deg,
+          #00f 90deg
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <h1>radial gradient</h1>
+
+    <div class="radial1"></div>
+    <hr />
+
+    <h2>using percentage</h2>
+    <div class="radial2"></div>
+    <hr />
+
+    <h1>conic gradient</h1>
+    <div class="conic"></div>
+    <hr />
+
+    <h1>conic gradient</h1>
+    <div class="conic2"></div>
+    <hr />
+
+    <h1>conic gradient using degrees</h1>
+    <div class="conic3"></div>
+  </body>
+</html>

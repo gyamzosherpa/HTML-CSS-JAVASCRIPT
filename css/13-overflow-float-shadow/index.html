@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>overflow and float</title>
+    <style>
+      /* overflow */
+      .scroll {
+        height: 100px;
+        width: 50%;
+        overflow: scroll;
+      }
+
+      .scroll > p {
+        background-color: brown;
+        color: white;
+      }
+
+      .hidden {
+        width: 100px;
+        height: 100px;
+        background-color: cadetblue;
+        /* overflow: visible; */
+        overflow: hidden;
+      }
+
+      /* float */
+
+      .div1 p {
+        float: right;
+        padding: 10px;
+      }
+
+      .div1 img {
+        height: 200px;
+        float: right;
+      }
+
+      .div2 {
+        padding: 10px;
+        border: 2px solid red;
+
+        /* horizontal, vertical, blur, color , inset means inside */
+        box-shadow: 10px 5px 50px inset;
+      }
+
+      .div3 {
+        float: left;
+        padding: 10px;
+        border: 2px solid green;
+      }
+
+      /* clear */
+
+      .div4 {
+        padding: 10px;
+        border: 2px solid blue;
+        clear: left;
+        /* float: right; */
+      }
+    </style>
+  </head>
+  <body>
+    <h2>overflow</h2>
+    <div class="scroll">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo odit
+        expedita suscipit quis repellat, obcaecati at dignissimos ab fuga soluta
+        quam eligendi asperiores iure tempore, consequuntur, mollitia similique
+        nobis magnam reiciendis. Perspiciatis nam aliquid voluptatem, esse ab
+        enim consequatur nisi! Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Nemo odit expedita suscipit quis repellat, obcaecati
+        at dignissimos ab fuga soluta quam eligendi asperiores iure tempore,
+        consequuntur, mollitia similique nobis magnam reiciendis. Perspiciatis
+        nam aliquid voluptatem, esse ab enim consequatur nisi!
+      </p>
+    </div>
+
+    <div class="hidden">
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+        perferendis pariatur neque cumque nobis at quo repellat porro quia quas.
+      </p>
+    </div>
+
+    <hr />
+
+    <h2>float</h2>
+
+    <div class="div1">
+      <p>
+        <img
+          src="https://www.pixsy.com/wp-content/uploads/2021/04/ben-sweet-2LowviVHZ-E-unsplash-1.jpeg"
+          alt="img1"
+        />Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione,
+        consectetur a nam ipsum nesciunt magnam saepe facilis iure placeat
+        veniam nisi illo nulla aliquam? Incidunt unde est harum voluptatem,
+        recusandae quidem omnis maiores. Sunt beatae cupiditate possimus,
+        corporis voluptates rerum perspiciatis iste voluptate delectus,
+        voluptatem veritatis accusantium? Eligendi maiores at vel eaque
+        recusandae? Ab cupiditate facilis perferendis fugiat magni eligendi fuga
+        molestiae porro id officiis reprehenderit expedita deserunt reiciendis
+        quo explicabo repellat, repudiandae ipsum nihil hic temporibus voluptas
+        earum accusantium. Dignissimos molestiae a rerum quasi ipsam enim, amet
+        cupiditate nostrum. consectetur adipisicing elit. Ratione, consectetur a
+        nam ipsum nesciunt magnam saepe facilis iure placeat veniam nisi illo
+        nulla aliquam? Incidunt unde est harum voluptatem, recusandae quidem
+        omnis maiores. Sunt beatae cupiditate possimus, corporis voluptates
+        rerum perspiciatis iste voluptate delectus, voluptatem veritatis
+        accusantium? Eligendi maiores at vel eaque recusandae? Ab cupiditate
+        facilis perferendis fugiat magni eligendi fuga molestiae porro id
+        officiis reprehenderit expedita deserunt reiciendis quo explicabo
+        repellat, repudiandae ipsum nihil hic temporibus voluptas earum
+        accusantium. Dignissimos molestiae a rerum quasi ipsam enim, amet
+        cupiditate nostrum.
+      </p>
+    </div>
+
+    <div class="div2">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam vero quis
+        quibusdam deleniti mollitia in obcaecati sed enim ad soluta!
+      </p>
+    </div>
+
+    <div class="div3">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio totam
+        minus assumenda officiis rerum eaque illum accusantium! Atque,
+        cupiditate magnam.
+      </p>
+    </div>
+
+    <div class="div4">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+        minus officiis veritatis, beatae repellendus dignissimos sint magnam?
+        Dicta, quibusdam sint.
+      </p>
+    </div>
+  </body>
+</html>

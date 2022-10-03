@@ -1,0 +1,24 @@
+.div1 {
+    position: absolute;
+    left: 50px;
+    width: calc(100% - 100px);
+    border: 1px solid black;
+    background-color: yellow;
+    padding: 5px;
+}
+
+.div2 {
+    background-color: purple;
+    color: wheat;
+    height: 100px;
+    width: max(500px, 600px);
+}
+
+.div3 {
+    background-color: brown;
+    color: white;
+    height: 100px;
+
+    /* left, right */
+    width: min(100px, 400px);
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>video flex</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .video1 {
+        height: 200px;
+        width: 300px;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+        margin: 20px 5px;
+      }
+
+      video {
+        width: 100%;
+      }
+
+      .mainDiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- video -->
+    <div class="mainDiv">
+      <div class="video1">
+        <video
+          playsinline
+          muted
+          loop
+          controls
+          preload="none"
+          poster="https://cdn.pixabay.com/photo/2022/09/27/18/58/woman-7483483__340.jpg"
+        >
+          <source src="../../videos/video1.mp4" type="video/mp4" />
+        </video>
+        <h5>video1</h5>
+      </div>
+
+      <div class="video1">
+        <video
+          playsinline
+          loop
+          controls
+          preload="none"
+          poster="https://cdn.pixabay.com/photo/2022/08/21/21/24/colours-7402147__340.jpg"
+        >
+          <source src="../../videos/sophoria.mkv" type="video/mp4" />
+        </video>
+        <h5>video1</h5>
+      </div>
+
+      <div class="video1">
+        <video playsinline autoplay muted loop controls>
+          <source src="../../videos/video2.mp4" type="video/mp4" />
+        </video>
+        <h5>video1</h5>
+      </div>
+
+      <div class="video1">
+        <video
+          playsinline
+          muted
+          loop
+          controls
+          preload="none"
+          poster="https://cdn.pixabay.com/photo/2022/09/27/18/58/woman-7483483__340.jpg"
+        >
+          <source src="../../videos/video1.mp4" type="video/mp4" />
+        </video>
+        <h5>video1</h5>
+      </div>
+
+      <div class="video1">
+        <video
+          playsinline
+          loop
+          controls
+          preload="none"
+          poster="https://cdn.pixabay.com/photo/2022/08/21/21/24/colours-7402147__340.jpg"
+        >
+          <source src="../../videos/sophoria.mkv" type="video/mp4" />
+        </video>
+        <h5>video1</h5>
+      </div>
+
+      <div class="video1">
+        <video playsinline autoplay muted loop controls>
+          <source src="../../videos/video2.mp4" type="video/mp4" />
+        </video>
+        <h5>video1</h5>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>animation</title>
+    <style>
+      .div1 {
+        width: 10rem;
+        height: 10rem;
+        background: red;
+        transition: width 2s, height 5s;
+      }
+
+      .div1:hover {
+        width: 20rem;
+        height: 20rem;
+      }
+
+      .div2 {
+        width: 10rem;
+        height: 10rem;
+        background: blue;
+        transition: width 3s;
+        transition-delay: 1s;
+        transition-timing-function: ease-out;
+      }
+
+      .div2:hover {
+        width: 30rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>animation using hover and transition</h2>
+    <div class="div1"></div>
+    <hr />
+    <div class="div2"></div>
+  </body>
+</html>

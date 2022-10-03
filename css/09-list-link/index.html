@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>list and link</title>
+
+    <style>
+      .a {
+        list-style-type: circle;
+        background-color: burlywood;
+      }
+
+      .b {
+        list-style-type: square;
+      }
+
+      .c {
+        list-style-type: upper-roman;
+        list-style-position: inside;
+      }
+
+      /* unvisited link */
+      a:link {
+        color: rgb(255, 174, 0);
+      }
+
+      /* visited link */
+      a:visited {
+        color: rgb(128, 0, 117);
+      }
+
+      /* mouse over link */
+      a:hover {
+        color: rgb(88, 124, 89);
+      }
+
+      /* selected link */
+      a:active {
+        color: yellow;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>css list</h1>
+    <ul class="a">
+      <li>facebook</li>
+      <li>twitter</li>
+      <li>instagram</li>
+    </ul>
+
+    <ul class="b">
+      <li>football</li>
+      <li>cricket</li>
+      <li>basketball</li>
+    </ul>
+
+    <ol class="c">
+      <li>coffee</li>
+      <li>tea</li>
+      <li>juice</li>
+    </ol>
+    <hr />
+
+    <h1>Link</h1>
+    <p>
+      <b><a href="https://youtube.com" target="_blank">Youtube</a></b>
+    </p>
+  </body>
+</html>

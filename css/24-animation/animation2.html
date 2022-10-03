@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation2</title>
+    <style>
+      .div1 {
+        width: 5rem;
+        height: 5rem;
+        background-color: red;
+        animation-name: example1;
+        animation-duration: 4s;
+        animation-iteration-count: 3;
+      }
+
+      @keyframes example1 {
+        from {
+          width: 5rem;
+          height: 5rem;
+        }
+        to {
+          width: 10rem;
+          height: 10rem;
+        }
+      }
+
+      .div2 {
+        width: 5rem;
+        height: 5rem;
+        background-color: blue;
+        position: relative;
+        animation-name: example2;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-delay: 1s;
+        animation-timing-function: ease-out;
+        animation-direction: alternate-reverse;
+      }
+
+      @keyframes example2 {
+        0% {
+          background-color: red;
+          left: 0px;
+          top: 0px;
+        }
+        25% {
+          background-color: yellow;
+          left: 200px;
+          top: 0px;
+        }
+        50% {
+          background-color: blue;
+          left: 200px;
+          top: 200px;
+        }
+        75% {
+          background-color: green;
+          border-radius: 50%;
+          background-image: url('https://cdn.pixabay.com/photo/2021/09/13/08/13/dahlia-6620610_960_720.jpg');
+          left: 0px;
+          top: 200px;
+        }
+        100% {
+          background-color: red;
+          left: 0px;
+          top: 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div1"></div>
+    <hr />
+
+    <h2>adding percentage</h2>
+    <div class="div2"></div>
+  </body>
+</html>

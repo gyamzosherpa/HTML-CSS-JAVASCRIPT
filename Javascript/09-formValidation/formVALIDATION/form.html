@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="navbar navbar-dark bg-dark">
+      <a href="#" class="navbar-brand">Form Validation</a>
+    </div>
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-6 m-auto">
+          <div class="card">
+            <div class="card-header bg-primary text-white text-center">
+              <h3 class="text-center">Registration</h3>
+            </div>
+            <div class="card-body bg-light">
+              <form id="register-form">
+                <div class="form-group mt-2">
+                  <input
+                    id="username"
+                    type="text"
+                    class="form-control"
+                    placeholder="Username"
+                  />
+                  <div
+                    id="username-feedback"
+                    style="background-color: green; color: red; font-size: 20px"
+                  ></div>
+                </div>
+
+                <div class="form-group mt-2">
+                  <input
+                    id="email"
+                    type="email"
+                    class="form-control"
+                    placeholder="Email"
+                  />
+                  <div
+                    id="email-feedback"
+                    style="background-color: green; color: red; font-size: 20px"
+                  ></div>
+                </div>
+
+                <div class="form-group mt-2">
+                  <input
+                    id="contactNumber"
+                    type="text"
+                    class="form-control"
+                    placeholder="contact number"
+                  />
+                  <div
+                    id="contact-feedback"
+                    style="background-color: green; color: red; font-size: 20px"
+                  ></div>
+                </div>
+
+                <div class="form-group mt-2">
+                  <input
+                    id="password"
+                    type="password"
+                    class="form-control"
+                    placeholder="Password"
+                  />
+                  <input type="checkbox" onclick="showHide()" />Show Password
+
+                  <div
+                    id="password-feedback"
+                    style="background-color: green; color: red; font-size: 20px"
+                  ></div>
+                </div>
+
+                <div class="form-group mt-2">
+                  <input
+                    id="c-password"
+                    type="password"
+                    class="form-control"
+                    placeholder="Confirm password"
+                  />
+                  <input type="checkbox" onclick="showHide2()" />Show Password
+                </div>
+                <div
+                  id="cpassword-feedback"
+                  style="background-color: green; color: red; font-size: 20px"
+                ></div>
+
+                <div class="form-group mt-2">
+                  <label for="">Gender</label>
+                  <input
+                    type="radio"
+                    name="gender"
+                    id="male"
+                    value="male"
+                  />Male
+                  <input
+                    type="radio"
+                    name="gender"
+                    id="female"
+                    value="female"
+                  />Female
+                  <input
+                    type="radio"
+                    name="gender"
+                    id="others"
+                    value="others"
+                  />Others
+                </div>
+                <div
+                  id="gender-feedback"
+                  style="background-color: green; color: red; font-size: 20px"
+                ></div>
+
+                <div class="text-center mt-2">
+                  <input
+                    id="register"
+                    type="submit"
+                    value="Register"
+                    class="btn btn-danger"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="form.js"></script>
+  </body>
+</html>

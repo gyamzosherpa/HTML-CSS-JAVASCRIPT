@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>font and text</title>
+    <style>
+      h1 {
+        text-transform: capitalize;
+
+        /* To add more than one shadow to the text, you can add a comma-separated list of shadows. */
+        /* horizontal, vertical, blur, color */
+        text-shadow: 80px 5px 8px black, 0 0 25px blue, 0 0 5px darkblue;
+        text-decoration-line: underline;
+        text-decoration-color: blueviolet;
+        text-decoration-thickness: 5px;
+        text-decoration-style: dashed;
+        text-underline-position: below;
+
+        /*move underline position*/
+        text-underline-offset: 20px;
+      }
+
+      h2 {
+        color: green;
+        text-align: center;
+        text-transform: uppercase;
+
+        /* first 2 values are horizontal and vertical , last value for blur */
+        text-shadow: 2px 2px 5px blue;
+      }
+
+      p {
+        color: violet;
+        text-align: left;
+        text-transform: lowercase;
+        letter-spacing: 10px;
+        text-indent: 30px;
+        font-weight: bold;
+        font-size: 20px;
+        word-spacing: 10px;
+        line-height: 3;
+
+        /*cannot copy text if "none", if "all", click and copy*/
+        user-select: none;
+      }
+
+      h3 {
+        font-style: oblique;
+        font-size: 40px;
+        font-weight: bolder;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+          'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: coral;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+      }
+
+      h3::first-letter {
+        color: red;
+        font-size: 80px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Font and text</h1>
+
+    <h2>Heading 2</h2>
+
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, aut
+      adipisci! In culpa necessitatibus dolore animi, magnam veniam omnis
+      sapiente?
+    </p>
+
+    <h3>heading 3</h3>
+  </body>
+</html>

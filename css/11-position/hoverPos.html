@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 500px;
+        border: 2px solid black;
+        margin: 50px auto;
+        position: relative;
+        overflow: hidden;
+        perspective: 10px;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+      .content {
+        background: rgba(0, 0, 0, 0.4);
+        color: white;
+        position: absolute;
+        top: -100%;
+        height: 100%;
+        width: 100%;
+        padding: 20px;
+        transition: all 1.5s;
+      }
+
+      .container:hover .content {
+        top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="https://cdn.pixabay.com/photo/2021/10/12/22/24/mulled-wine-6704928__340.jpg"
+        alt=""
+      />
+      <div class="content">
+        <h2>hello world</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam autem
+          dolorum doloribus exercitationem. Asperiores sint voluptas quia
+          laudantium fugit quam.
+        </p>
+        <input type="button" value="submit" />
+      </div>
+    </div>
+  </body>
+</html>

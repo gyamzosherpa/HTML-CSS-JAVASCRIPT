@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        width: 720px;
+        margin: 45px auto 0;
+        background-color: rgb(235, 191, 191);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 120px 60px 100px 400px 50px;
+        grid-gap: 15px;
+
+        /*
+        grid-template-areas:
+          'header header header'
+          'menu menu menu'
+          'box1 box2 sidebar'
+          'content content sidebar'
+          'footer footer footer';
+          */
+      }
+
+      .item1 {
+        background-color: red;
+        /*grid-area: header;*/
+
+        grid-column: 1 / span 3;
+      }
+      .item2 {
+        background-color: green;
+        /*grid-area: menu;*/
+        grid-column: 1 / 4;
+      }
+      .item3 {
+        background-color: blue;
+        /*grid-area: box1;*/
+      }
+      .item4 {
+        background-color: yellow;
+        /* grid-area: box2;*/
+      }
+      .item5 {
+        background-color: gray;
+        /*grid-area: sidebar;*/
+        grid-row: 3 / 5;
+        grid-column-start: 3;
+      }
+      .item6 {
+        background-color: purple;
+        grid-column: 1 / 3;
+        /* grid-area: content;*/
+      }
+      .item7 {
+        background-color: black;
+        color: white;
+        grid-column: 1 / 4;
+
+        /* grid-area: footer;*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="items item1">Header</div>
+      <div class="items item2">Menu</div>
+      <div class="items item3">Box1</div>
+      <div class="items item4">Box2</div>
+      <div class="items item5">Sidebar</div>
+      <div class="items item6">content</div>
+      <div class="items item7">footer</div>
+    </div>
+  </body>
+</html>

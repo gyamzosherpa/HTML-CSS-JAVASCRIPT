@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>linear gradient</title>
+    <style>
+      .linear {
+        height: 5rem;
+        /* background: linear-gradient(to right, #f00, #0f0, #00f); */
+        background: linear-gradient(
+          to right,
+          rgba(255, 0, 0, 0.5),
+          rgba(0, 255, 0, 0.5),
+          rgba(0, 0, 255, 1)
+        );
+      }
+      .linear2 {
+        height: 5rem;
+        background: linear-gradient(blue, yellow);
+      }
+
+      .linear3 {
+        height: 5rem;
+        background: linear-gradient(to left, red, yellow, blue);
+      }
+
+      .linear4 {
+        height: 5rem;
+        background: linear-gradient(to right, red, yellow, blue);
+      }
+
+      .linear5 {
+        height: 5rem;
+        background: linear-gradient(90deg, red, yellow, blue);
+      }
+
+      .linear6 {
+        height: 5rem;
+        background: linear-gradient(-90deg, red, yellow, blue);
+      }
+
+      .linear7 {
+        height: 5rem;
+        background: linear-gradient(0deg, red, yellow, blue);
+      }
+
+      .linear8 {
+        height: 5rem;
+        background: linear-gradient(180deg, red, yellow, blue);
+      }
+
+      .rainbow {
+        height: 10rem;
+        background: linear-gradient(
+          to right,
+          red,
+          orange,
+          yellow,
+          green,
+          blue,
+          indigo,
+          violet
+        );
+      }
+
+      .rainbow > h2 {
+        text-align: center;
+        font-size: 3rem;
+        line-height: 3.5;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>linear gradient</h2>
+    <div class="linear"></div>
+    <hr />
+    <div class="linear2"></div>
+    <hr />
+
+    <h4>linear gradient starting from left</h4>
+    <div class="linear3"></div>
+    <hr />
+
+    <h4>linear gradient starting from right</h4>
+    <div class="linear4"></div>
+    <hr />
+
+    <h4>linear gradient starting from right using degree (90 degree)</h4>
+    <div class="linear5"></div>
+    <hr />
+
+    <h4>linear gradient starting from left using degree (-90 degree)</h4>
+    <div class="linear6"></div>
+    <hr />
+
+    <h4>linear gradient using degree (0 degree)</h4>
+    <div class="linear7"></div>
+    <hr />
+
+    <h4>linear gradient using degree (180 degree)</h4>
+    <div class="linear8"></div>
+    <hr />
+
+    <h4>rainbow</h4>
+    <div class="rainbow"><h2>Rainbow background</h2></div>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Double background</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      /*when we set "background-attachment:fixed", the image does not move */
+      .background {
+        background-image: url('https: //cdn.pixabay.com/photo/2017/02/26/02/37/girl-2099359__340.jpg');
+        background-repeat: no-repeat;
+        background-position: right top;
+        background-attachment: fixed;
+        /* background-size: contain; */
+      }
+
+      /* shorthand */
+      /* .background {
+    background: #ffff00 url("../../images/cv_img.png") no-repeat right top;
+} */
+
+      /* double background */
+      .div1 {
+        height: 100vh;
+        background-image: url('https://cdn.pixabay.com/photo/2014/11/14/21/24/woman-531252__340.jpg'),
+          url('https://cdn.pixabay.com/photo/2017/02/26/02/37/girl-2099359__340.jpg');
+        background-position: left, right;
+        background-repeat: no-repeat, no-repeat;
+        background-size: 50% 100%, 50% 100%;
+      }
+
+      .div1 > h2,
+      p {
+        background-color: chartreuse;
+        padding: 10px;
+        width: 30%;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div1">
+      <h2>Multiple background</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda
+        officia quidem delectus obcaecati quo aspernatur, accusantium ducimus
+        eaque nulla eum.
+      </p>
+    </div>
+  </body>
+</html>

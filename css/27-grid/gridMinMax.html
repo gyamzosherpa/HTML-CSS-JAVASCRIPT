@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 80%;
+        margin: 50px auto;
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: minmax(150px, 50%) repeat(2, 1fr) min-content;
+        grid-template-rows: repeat(2, minmax(150px, min-content));
+      }
+      .item1 {
+        background-color: red;
+      }
+      .item2 {
+        background-color: green;
+      }
+      .item3 {
+        background-color: blue;
+      }
+      .item4 {
+        background-color: yellow;
+      }
+      .item5 {
+        background-color: gray;
+      }
+      .item6 {
+        background-color: purple;
+      }
+      .item7 {
+        background-color: black;
+        color: white;
+      }
+      .item8 {
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="items item1">
+        0ne Lorem ipsum dolor sit Lorem ipsum dolor sit amet. 0ne Lorem ipsum
+        dolor sit Lorem ipsum dolor sit amet. 0ne Lorem ipsum dolor sit Lorem
+        ipsum dolor sit amet. 0ne Lorem ipsum dolor sit Lorem ipsum dolor sit
+        amet. amet. amet. amet. amet. amet. amet. amet. amet.
+      </div>
+      <div class="items item2">two</div>
+      <div class="items item3">three</div>
+      <div class="items item4">
+        four Lorem ipsum dolor sit amet consectetureeeeeeeee adipisicing elit.
+        Ratione quidem error quas labore neque tenetur?Lorem ipsum dolor sit
+        amet consectetur adipisicing elit. Illum, consectetur.sdfsdfs sdfsdfs
+        amet consectetur adipisicing elit. Illum, consectetur.sdfsdfs sdfsdfs
+        amet consectetur adipisicing elit. Illum, consectetur.sdfsdfs sdfsdfs
+        amet consectetur adipisicing elit. Illum, consectetur.sdfsdfs sdfsdfs
+        amet consectetur adipisicing elit. Illum, consectetur.sdfsdfs sdfsdfs
+      </div>
+      <div class="items item5">five</div>
+      <div class="items item6">six</div>
+      <div class="items item7">seven</div>
+      <div class="items item8">eight</div>
+    </div>
+  </body>
+</html>

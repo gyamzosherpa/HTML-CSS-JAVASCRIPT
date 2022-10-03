@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        background-color: rgb(231, 200, 200);
+        width: 80%;
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(2, 100px);
+        grid-gap: 10px;
+      }
+      .item1 {
+        background-color: red;
+        order: 6;
+      }
+      .item2 {
+        background-color: green;
+        order: 5;
+      }
+      .item3 {
+        background-color: blue;
+      }
+      .item4 {
+        background-color: yellow;
+      }
+      .item5 {
+        background-color: violet;
+      }
+      .item6 {
+        background-color: teal;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="items item1">one</div>
+      <div class="items item2">two</div>
+      <div class="items item3">three</div>
+      <div class="items item4">four</div>
+      <div class="items item5">five</div>
+      <div class="items item6">six</div>
+    </div>
+  </body>
+</html>

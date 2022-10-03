@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    background-color: blue;
+    color: white;
+    line-height: 4rem;
+    font-size: 1.5rem;
+}
+
+nav {
+    background-color: #000;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    display: block;
+    padding: 1rem;
+}
+
+ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    border-bottom: 0.2rem solid white;
+}
+
+.dropdown {
+    padding: 0;
+    width: 7.5rem;
+    background-color: grey;
+    position: absolute;
+    top: 7.1rem;
+    left: 23rem;
+    display: none;
+}
+
+.sub-dropdown {
+    padding: 0;
+    color: #fff;
+    display: none;
+    position: absolute;
+    top: 4.3rem;
+    left: 7.5rem;
+    background-color: rgb(30, 4, 4);
+}
+
+.dropdown li:hover {
+    background-color: rgb(70, 102, 10);
+}
+
+ul li:hover .dropdown {
+    display: block;
+}
+
+.dropdown li:hover .sub-dropdown {
+    display: block;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left {
+    width: 15%;
+    /* height: 90rem; */
+    background-color: rgb(255, 181, 181);
+}
+
+
+.left-top h3 {
+    font-size: 1.3rem;
+    color: #000;
+    text-align: center;
+    padding: 1rem;
+}
+
+.left-top ul {
+    padding: 0;
+    display: block;
+}
+
+.left-top ul li {
+    list-style: none;
+    display: block;
+    padding: 0.5rem 3.8rem;
+    cursor: pointer;
+}
+
+.right {
+    width: 85%;
+    /* height: 90rem; */
+    background-color: rgb(255, 255, 255);
+}
+
+.right-top {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product {
+    width: 30%;
+    height: 27rem;
+    background-color: rgb(255, 255, 255);
+    margin: 1.3rem;
+    /* border: 4px solid rgb(212, 207, 207); */
+
+    /*horizontal,vertical,blur. The optional fourth value defines the spread of the shadow. */
+    box-shadow: 0 20px 15px 1px #888888;
+    transition: .2s linear;
+}
+
+.product-img {
+    width: 100%;
+    height: 20rem;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(216, 206, 206);
+    overflow: hidden;
+}
+
+.product-img img {
+    width: 100%;
+    height: 100%;
+    padding: 4rem;
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-iteration-count: 4;
+    /* animation-direction: reverse; */
+    animation-timing-function: ease-in-out;
+    transition: ease-in .4s;
+}
+
+@keyframes fadeIn {
+    0% {
+        transform: scaleY(1);
+    }
+
+    25% {
+        transform: scaleY(1.5);
+    }
+
+    50% {
+        transform: scaleY(-0.5);
+    }
+
+    75% {
+        transform: scaleY(1.5);
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+
+/* @keyframes fadeIn {
+    0% {
+        opacity: 0.5;
+    }
+
+    20% {
+        opacity: 0.5;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+} */
+
+.product-img img:hover {
+    transform: scale(1.2);
+}
+
+.product-info {
+    text-align: center;
+    margin: 0.9rem;
+}
+
+.product-info button {
+    background-color: rgb(255, 181, 181);
+    border: none;
+    color: #000;
+    padding: 0.4rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 1rem 0;
+}
+
+.product-info button:hover {
+    background-color: rgb(144, 184, 10);
+}
+
+footer {
+    background-color: rgb(23, 2, 2);
+    padding: 1rem;
+    text-align: center;
+    color: rgb(255, 251, 251);
+    font-size: 1rem;
+}

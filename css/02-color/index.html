@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>colors</title>
+  </head>
+
+  <style>
+    .p1 {
+      background-color: #ff0000;
+    }
+    .p1a {
+      background-color: #ff000040;
+    }
+
+    .p2 {
+      background-color: #00ff00;
+    }
+    .p2a {
+      background-color: #00ff0090;
+    }
+
+    .p3 {
+      background-color: #0000ff;
+    }
+    .p3a {
+      background-color: #0000ff45;
+    }
+
+    .p4 {
+      background-color: #ffff00;
+    }
+    .p5 {
+      background-color: #ff00ff;
+    }
+
+    .rgb {
+      background-color: rgb(259, 0, 0);
+    }
+
+    .rgb2 {
+      background-color: rgb(0, 255, 0);
+    }
+
+    .rgb3 {
+      background-color: rgb(0, 0, 255);
+    }
+
+    #p1 {
+      background-color: rgba(255, 0, 0, 0.3);
+    }
+
+    #p2 {
+      background-color: rgba(0, 255, 0, 0.3);
+    }
+
+    #p3 {
+      background-color: rgba(0, 0, 255, 0.3);
+    }
+
+    .hsl {
+      background-color: hsl(120, 100%, 50%);
+    }
+
+    .hsla {
+      background-color: hsla(120, 100%, 75%, 0.9);
+    }
+  </style>
+
+  <body>
+    <h1>Hex Colors</h1>
+    <p>Hex specified with #RRGGBB</p>
+
+    <p class="p1">Red</p>
+    <!-- the last two digit "00" represent transparency .i.e => ff000080  -->
+    <p class="p1a">Red Transparency</p>
+
+    <p class="p2">green</p>
+    <p class="p2a">green transparency</p>
+
+    <p class="p3">Blue</p>
+    <p class="p3a">Blue transparency</p>
+
+    <p class="p4">Yellow</p>
+    <p class="p5">Cerise</p>
+
+    <hr />
+
+    <h1>RGB</h1>
+    <!-- 255 is highest point and others are set to zero, thats why it is red -->
+    <p class="rgb">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sed minima
+      totam, delectus beatae veniam sint culpa doloremque illum ipsa distinctio,
+      alias illo odio quae? Recusandae inventore dolores autem ipsum.
+    </p>
+
+    <p class="rgb2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sed minima
+      totam, delectus beatae veniam sint culpa doloremque illum ipsa distinctio,
+      alias illo odio quae? Recusandae inventore dolores autem ipsum.
+    </p>
+
+    <p class="rgb3">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sed minima
+      totam, delectus beatae veniam sint culpa doloremque illum ipsa distinctio,
+      alias illo odio quae? Recusandae inventore dolores autem ipsum.
+    </p>
+
+    <hr />
+
+    <h1>RGBA</h1>
+    <p>RGB with opacity</p>
+    <!-- the last 2 digit indicate opacity -->
+    <p id="p1">paragraph1</p>
+    <p id="p2">paragraph2</p>
+    <p id="p3">paragraph3</p>
+
+    <hr />
+
+    <h1>HSL colors</h1>
+    <p>hue, saturation and lightness</p>
+
+    <p class="hsl">HSL</p>
+
+    <h2>HSLA</h2>
+    <p class="hsla">HSLA</p>
+  </body>
+</html>

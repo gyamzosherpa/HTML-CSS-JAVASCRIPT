@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>before-after</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .card {
+        height: 500px;
+        width: 500px;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+        margin: 20px auto;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .card-discount::after {
+        content: '20% off';
+        height: 100px;
+        width: 750px;
+        background-color: blue;
+        display: block;
+        position: absolute;
+        top: -40px;
+        left: 80px;
+        color: aquamarine;
+        text-align: center;
+        line-height: 9;
+        transform: rotate(40deg);
+        padding: 10px 20px;
+      }
+
+      img {
+        width: 100%;
+        padding: 20px;
+      }
+      .card-info {
+        text-align: center;
+      }
+      button {
+        padding: 10px 40px;
+        margin-top: 30px;
+        background-color: green;
+        border: none;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="card-discount"></div>
+      <img
+        src="https://cdn.pixabay.com/photo/2016/11/21/16/27/laptop-1846277__340.jpg"
+        alt="laptop"
+        class="img1"
+      />
+
+      <div class="card-info">
+        <h2>New laptop</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, beatae!
+        </p>
+        <button type="button">Add to Cart</button>
+      </div>
+    </div>
+  </body>
+</html>

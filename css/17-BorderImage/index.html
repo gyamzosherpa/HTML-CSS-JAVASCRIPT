@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>border-image</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .div1 {
+        height: 400px;
+        width: 400px;
+        border: 10px solid black;
+        margin: 100px auto;
+        padding: 20px;
+        border-image-source: url('https://cdn.pixabay.com/photo/2020/01/24/08/43/redhead-4789668_960_720.jpg');
+        border-image-slice: 21;
+        border-image-width: 30px;
+        border-image-outset: 10px;
+        border-image-repeat: repeat;
+
+        /*shortcut: border-image: url('') slice / width / outset / repeat */
+      }
+      p {
+        padding: 20px;
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div1">
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda sed,
+        temporibus iure aspernatur quidem perferendis laboriosam nihil, expedita
+        unde non corrupti labore optio numquam quam facilis ipsam vel similique,
+        ex voluptates? In debitis, officiis earum dolor ratione perferendis
+        soluta dignissimos tempore. Aliquam distinctio ipsum vero iusto numquam
+        eveniet saepe recusandae quam, optio nesciunt, enim fuga voluptas,
+        exercitationem sint nam tempore.
+      </p>
+    </div>
+  </body>
+</html>

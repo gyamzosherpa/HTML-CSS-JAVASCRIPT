@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+.container {
+    background-color: rgb(255, 252, 252);
+    margin: auto;
+    min-height: 100vh;
+    width: 70%;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+input,
+textarea,
+button {
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.submitBtn {
+    background-color: greenyellow;
+    border: 2px solid #000;
+    color: #000;
+    cursor: pointer;
+    transition: all 1s ease-in;
+}
+
+.submitBtn:hover {
+    background-color: #250c42;
+    color: #fff;
+}
+
+.task {
+    background-color: coral;
+    font-size: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 2px solid #ccc;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.task>div {
+    width: 100%;
+}
+
+.task span {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.icon {
+    height: 2.2rem;
+    width: 2.2rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease-in;
+}
+
+.icon:hover {
+    background-color: red;
+}

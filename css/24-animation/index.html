@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+      .translate {
+        height: 10rem;
+        width: 10rem;
+        background-color: chocolate;
+        border: 1px solid black;
+        box-shadow: 10px 10px blue;
+
+        /* move 10px from left and 30px to bottom from its current position */
+        transform: translate(1rem, 3rem);
+      }
+
+      .translate2 {
+        height: 10rem;
+        width: 10rem;
+        background-color: chocolate;
+        border: 1px solid black;
+        box-shadow: 10px 10px blue;
+        transform: translateX(12rem);
+      }
+
+      .rotate {
+        height: 5rem;
+        width: 5rem;
+        background-color: rgb(59, 27, 4);
+        border: 1px solid black;
+        box-shadow: 10px 10px blue;
+        transform: rotate(55deg);
+      }
+
+      .scale {
+        height: 5rem;
+        width: 5rem;
+        background-color: rgb(59, 27, 4);
+        border: 1px solid black;
+        box-shadow: 5px 5px blue;
+        transform: scale(0.5);
+      }
+
+      .scale2 {
+        height: 2rem;
+        width: 2rem;
+        background-color: rgb(59, 27, 4);
+        border: 1px solid black;
+        box-shadow: 5px 5px blue;
+
+        /*2 increases the width and 3 increases height*/
+        transform: scale(2, 3);
+      }
+
+      .skew {
+        height: 5rem;
+        width: 5rem;
+        background-color: rgb(170, 153, 141);
+        border: 1px solid black;
+        box-shadow: 5px 5px blue;
+
+        /* skew the element 30 degree in the x-axis and 20 degrees along the y-axis */
+        transform: skew(30deg, 10deg);
+      }
+    </style>
+  </head>
+  <body>
+    <h1><u>animation</u></h1>
+    <h2>translate</h2>
+    <div class="translate"></div>
+    <div class="translate2"></div>
+    <hr />
+
+    <h2>rotate</h2>
+    <div class="rotate"></div>
+    <hr />
+
+    <h2>scale</h2>
+    <p>increase or decrease the size of an element, do not specify the unit</p>
+    <div class="scale"></div>
+    <div class="scale2"></div>
+    <br />
+    <br />
+    <br />
+    <hr />
+
+    <h2>skew</h2>
+    <div class="skew"></div>
+  </body>
+</html>
