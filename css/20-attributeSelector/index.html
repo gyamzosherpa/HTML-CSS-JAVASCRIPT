@@ -24,14 +24,31 @@
         border-radius: 50%;
       }
 
-      /* selects elements with the specified attribute starting with the specified value .i.e top- */
+      /* selects elements with the specified attribute starting with the specified value .i.e top- "dash" */
       [class|='top'] {
         background-color: rgb(61, 14, 14);
       }
 
+      /*starting with name "top"*/
       /* [class^="top"] {
     background-color: yellow;
 } */
+
+      /*ending with name "top"*/
+      /* [class$="top"] {
+    background-color: yellow;
+} */
+
+      /*value starts with "top* from anywhere/
+      /* [class*="top"] {
+    background-color: yellow;
+} */
+      img[alt='lady'] {
+        border: 20px solid green;
+      }
+      img[title='guitar'] {
+        border: 20px solid blue;
+      }
     </style>
   </head>
   <body>
@@ -42,23 +59,22 @@
     <a href="http://facebook.com">Facebook</a>
     <hr />
     <img
-      src="../../images/image1.jpg"
+      src="https://cdn.pixabay.com/photo/2017/12/17/12/45/football-3024154__340.jpg"
       title="hello"
-      alt=""
+      alt="football"
       width="400"
       height="200"
     />
     <img
-      src="../../images/image2.jpg"
+      src="https://cdn.pixabay.com/photo/2015/03/12/12/38/guitar-670087__340.jpg"
       title="hello2"
-      alt=""
+      alt="guitar"
       width="400"
       height="200"
     />
     <img
-      src="../../images/image4.jpg"
+      src="https://cdn.pixabay.com/photo/2020/08/31/00/33/guitar-5531027__340.jpg"
       title="hello3"
-      alt=""
       width="400"
       height="200"
     />
@@ -67,6 +83,25 @@
       <h1 class="top-header">Welcome</h1>
       <p class="top-text">Hello world</p>
       <p class="topContent">Are u learning react?</p>
+      <figure>
+        <img
+          src="https://cdn.pixabay.com/photo/2015/03/12/12/38/guitar-670087__340.jpg"
+          alt="lady"
+          width="400"
+          height="200"
+        />
+        <figcaption><strong>"alt value" attribute</strong></figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src="https://cdn.pixabay.com/photo/2015/03/12/12/38/guitar-670087__340.jpg"
+          title="guitar"
+          width="400"
+          height="200"
+        />
+        <figcaption><strong>"title value" attribute</strong></figcaption>
+      </figure>
     </div>
   </body>
 </html>

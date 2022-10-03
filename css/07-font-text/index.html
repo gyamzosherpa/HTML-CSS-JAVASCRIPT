@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>font and text</title>
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
       h1 {
         text-transform: capitalize;
 
@@ -60,6 +66,16 @@
         color: red;
         font-size: 80px;
       }
+
+      /*word-break and word-wrap*/
+      .div1 {
+        margin: 20px auto;
+        height: 100px;
+        width: 150px;
+        border: 2px solid black;
+        /*word-break: break-all;*/
+        word-wrap: break-word;
+      }
     </style>
   </head>
 
@@ -75,5 +91,6 @@
     </p>
 
     <h3>heading 3</h3>
+    <div class="div1">hello loremmmmmmmmmmmmmm hello world</div>
   </body>
 </html>

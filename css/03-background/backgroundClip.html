@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>background-clip</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .background {
+        width: 800px;
+        height: 400px;
+        padding: 20px;
+        background-color: green;
+        margin: 20px auto;
+        border: 20px dotted gray;
+        background-clip: content-box;
+      }
+      h1 {
+        text-align: center;
+        color: transparent;
+        font-size: 100px;
+        font-weight: bolder;
+        text-transform: uppercase;
+        background-image: url('https://cdn.pixabay.com/photo/2017/01/25/17/20/lionel-2008448__340.jpg');
+        -webkit-background-clip: text;
+      }
+      /*background-blend-mode: change in image qualities*/
+    </style>
+  </head>
+  <body>
+    <h1>How CSS Background-clip works?</h1>
+    <div class="background">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae repellat
+        laborum non repellendus illo architecto pariatur, temporibus commodi
+        earum nemo at dolor aliquam nihil corporis! Soluta natus numquam ex
+        eligendi, sapiente fugit eius dolore, magnam amet iure officiis quam.
+        Veniam ipsam itaque dolorum. Recusandae, alias assumenda harum natus
+        ullam distinctio, animi placeat iusto provident veniam vel facere
+        veritatis pariatur officiis officia tenetur architecto libero, eveniet
+        error possimus praesentium dolor! Corrupti perferendis maxime voluptate
+        vitae necessitatibus quo rem sed, et totam, temporibus ullam praesentium
+        architecto. Saepe veritatis nulla maxime quidem est. Sint, mollitia.
+        Minima earum quis libero? Itaque rem exercitationem nam.
+      </p>
+    </div>
+  </body>
+</html>

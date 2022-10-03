@@ -10,38 +10,48 @@
   <style>
     table {
       border-collapse: collapse;
-      width: 80%;
+      width: 500px;
+      margin: 50px auto;
+      table-layout: auto;
+      empty-cells: show;
     }
     th,
     td {
-      border: 1px solid rgb(227, 219, 219);
-      padding: 15px;
+      border: 2px solid rgb(227, 219, 219);
+      vertical-align: top;
+      padding: 20px;
     }
 
     tr:nth-child(odd) {
       background-color: #f2f2f2;
     }
-    tr:hover {
+    th:hover {
       background-color: yellow;
     }
     th {
-      padding-top: 12px;
-      padding-bottom: 12px;
       text-align: left;
       color: black;
     }
+    caption {
+      caption-side: top;
+    }
   </style>
   <body>
-    <h1>table</h1>
-
     <table>
+      <caption>
+        <p>Users Table</p>
+      </caption>
       <tr>
         <th>Name</th>
         <th>Address</th>
         <th>age</th>
       </tr>
       <tr>
-        <td>Gyamzo</td>
+        <td>
+          Gyamzo Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Asperiores, provident repudiandae? Reiciendis ad saepe adipisci
+          eveniet eos magnam earum iure.
+        </td>
         <td>Swayambhu</td>
         <td>27</td>
       </tr>
@@ -52,7 +62,7 @@
       </tr>
       <tr>
         <td>Gyamzo2</td>
-        <td>Swayambhu2</td>
+        <td>Swayambhu2fsdfsdfsffd</td>
         <td>27</td>
       </tr>
       <tr>
@@ -63,7 +73,7 @@
       <tr>
         <td>Gyamzo2</td>
         <td>Swayambhu2</td>
-        <td>27</td>
+        <td></td>
       </tr>
     </table>
   </body>

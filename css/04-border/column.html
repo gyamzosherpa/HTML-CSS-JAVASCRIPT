@@ -6,24 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>multiple column</title>
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
       .div1 {
-        column-count: 3;
+        border: 0px double black;
+        margin: 10px auto;
+        width: 80%;
+        column-count: 5;
         column-gap: 30px;
         column-rule-style: solid;
         column-rule-width: 5px;
         column-rule-color: green;
       }
+      img {
+        height: 200px;
+        width: 200px;
+      }
+      h1 {
+        column-span: all;
+      }
     </style>
   </head>
   <body>
-    <h2>multiple column</h2>
+    <h2 style="text-align: center">multiple column</h2>
     <div class="div1">
+      <h1>Ronaldo benched again...</h1>
+      <img
+        src="https://cdn.pixabay.com/photo/2021/03/28/08/18/ronaldo-6130591__340.jpg"
+        alt=""
+      />
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
         nulla reiciendis, earum optio nostrum aperiam quasi veniam sequi
         nesciunt molestiae. Lorem ipsum dolor sit amet consectetur adipisicing
         elit. Temporibus nulla reiciendis, earum optio nostrum aperiam quasi
-        veniam sequi nesciunt molestiae.
+        veniam sequi nesciunt molestiae. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Incidunt nesciunt cum unde ut iste aliquid quaerat.
+        Consequatur voluptatibus cupiditate nulla voluptatum, officiis
+        molestiae, aliquid distinctio minus vitae sapiente atque cum doloremque
+        obcaecati non enim pariatur fugit earum eos commodi voluptas eaque
+        voluptates est magni mollitia. Fugiat aut quo sed ipsam eveniet
+        repellendus id omnis itaque provident consequuntur voluptatum odit
+        tempore incidunt, blanditiis atque architecto ullam minima veniam libero
+        fuga aperiam.
       </p>
     </div>
   </body>
