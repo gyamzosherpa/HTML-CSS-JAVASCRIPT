@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>aspect-ratio</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        height: 300px;
+        border: 2px dashed black;
+        margin: 20px auto;
+      }
+      img {
+        height: 100%;
+        aspect-ratio: 2/1;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- aspect-ratio works when any of height or width is mention -->
+    <!-- if both height/width mention it doesn't work -->
+    <!-- if width=400px, and aspect-ratio=1/2, it means height increase by double -->
+    <!-- if width=400px, and aspect-ratio=2/1, it means width increase by double -->
+    <!-- if height=400px, and aspect-ratio=2/1, it means width increase by double -->
+    <div class="container">
+      <img
+        src="https://images.unsplash.com/photo-1630125193995-cd224e2fba7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDl8fGJvb2JzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+        alt=""
+      />
+    </div>
+  </body>
+</html>
