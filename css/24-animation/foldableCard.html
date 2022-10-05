@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fold</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: #9f2269;
+      }
+      .card {
+        position: relative;
+        width: 300px;
+        height: 400px;
+        background: #fff;
+        transform-style: preserve-3d;
+        transform: perspective(1000px);
+        box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.25);
+        transition: transform 1s;
+      }
+      .card:hover {
+        transform: translateX(50%);
+      }
+
+      .img-Box {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        transform-origin: left;
+        transform-style: preserve-3d;
+        background: #000;
+        transition: 1s;
+        box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.25);
+      }
+
+      .card:hover .img-Box {
+        transform: rotateY(-180deg);
+      }
+
+      .card .img-Box img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transform-style: preserve-3d;
+        backface-visibility: hidden;
+      }
+
+      .card .img-Box img:nth-child(2) {
+        transform: rotateY(180deg);
+      }
+
+      .card .details {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .card .details .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .card .details .content h2 {
+        text-align: center;
+        font-weight: 700;
+        line-height: 1em;
+      }
+
+      .card .details .content h2 span {
+        color: #e21212;
+        font-size: 0.8em;
+      }
+
+      .icons {
+        position: relative;
+        display: flex;
+        margin-top: 10px;
+      }
+
+      .icons a {
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        background: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        margin: 5px;
+        font-size: 18px;
+        transition: 0.2s;
+        color: #fbe9e7;
+      }
+
+      .icons a:hover {
+        background: #e21212;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- foldable card -->
+    <div class="container">
+      <div class="card">
+        <div class="img-Box">
+          <img
+            src="https://cdn.pixabay.com/photo/2018/03/12/12/32/woman-3219507__340.jpg"
+            alt=""
+          />
+          <img
+            src="https://cdn.pixabay.com/photo/2015/03/03/08/55/portrait-657116__340.jpg"
+            alt=""
+          />
+        </div>
+        <div class="details">
+          <div class="content">
+            <h2>Selena Joly<br /><span>web Developer</span></h2>
+            <div class="icons">
+              <a href="">
+                <iconify-icon icon="akar-icons:facebook-fill"></iconify-icon
+              ></a>
+              <a href="">
+                <iconify-icon icon="akar-icons:instagram-fill"></iconify-icon
+              ></a>
+              <a href=""
+                ><iconify-icon icon="akar-icons:twitter-fill"></iconify-icon
+              ></a>
+              <a href="">
+                <iconify-icon icon="logos:linkedin-icon"></iconify-icon
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+  </body>
+</html>
