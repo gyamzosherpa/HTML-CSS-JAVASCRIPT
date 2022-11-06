@@ -1,0 +1,881 @@
+/*................. header css.............. */
+.header {
+    margin-top: 2.5rem;
+    min-height: 5.8rem;
+}
+
+.logo h1 {
+    font-size: 3.6rem;
+    font-weight: 600;
+}
+
+.logo h1 a {
+    text-decoration: none;
+    color: #d19c97;
+}
+
+.logo h1 span:nth-child(1) {
+    padding: 0 1.5rem;
+    border: 1px solid #ddd;
+    margin-right: 5px;
+    color: #D19C97;
+}
+
+.searchProduct input {
+    width: 70%;
+    height: 4rem;
+    border-radius: 0;
+    padding: 1rem;
+    font-size: 1.8rem;
+    color: #666;
+    border: 1px solid #ddd;
+    border-right: none;
+}
+
+.searchProduct input:focus {
+    outline: none;
+}
+
+.searchProduct button {
+    height: 4rem;
+    border-radius: 0;
+    border: 1px solid #ddd;
+    margin-left: -3px;
+    font-size: 1.8rem;
+    padding: 0 1rem;
+    color: #d19c97;
+    background-color: #fff;
+}
+
+.selectedProduct {
+    text-align: right;
+}
+
+.common-btn a {
+    text-decoration: none;
+    color: #d19c97;
+}
+
+/* ....................................... */
+
+/*................ baner css............... */
+
+.full-banner-wrapper {
+    border-top: 1px solid #ddd;
+}
+
+.list-header {
+    height: 6rem;
+    background-color: var(--main-bg-color);
+}
+
+.list-header>h4 {
+    display: inline-block;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    font-weight: 500;
+    font-size: 1.8rem;
+    padding: 2rem 0rem;
+}
+
+.list-header span {
+    float: right;
+    padding: 2.5rem;
+}
+
+.category-list ul {
+    list-style-type: none;
+    border: 1px solid #ddd;
+}
+
+.category-list ul li {
+    border-bottom: 1px solid #ddd;
+    padding: 1rem 4rem;
+    font-size: 1.5rem;
+}
+
+.category-list ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.shop-menu {
+    display: flex;
+}
+
+.left-menu-list {
+    width: 70%;
+}
+
+.right-menu-list {
+    width: 30%;
+    direction: rtl;
+}
+
+.shop-menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.shop-menu ul li {
+    min-width: 7.5rem;
+    padding: 2rem;
+    font-size: 1.6rem;
+}
+
+.shop-menu ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.shop-menu ul.dropdown {
+    display: none;
+    border: 1px solid #ddd;
+    position: absolute;
+    box-shadow: #000 1px 1px 10px;
+    width: 14rem;
+}
+
+.dropdown-head {
+    position: relative;
+}
+
+.dropdown-head:hover ul.dropdown {
+    display: block;
+    z-index: 1;
+}
+
+.shop-menu ul li a:hover {
+    color: #d19c97;
+}
+
+.dropdown-head ul.dropdown li:hover {
+    display: block;
+    width: 100%;
+    background-color: rgb(66, 7, 70);
+}
+
+.banner {
+    position: relative;
+    height: 31.8rem;
+    float: left;
+    width: 100%;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-left: 1.5rem;
+}
+
+.banner-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    /* width: 60rem; */
+}
+
+.banner-text h4 {
+    text-transform: uppercase;
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+
+.banner-text h3 {
+    text-transform: uppercase;
+    font-size: 5rem;
+    font-weight: 600;
+}
+
+.banner-text a {
+    background-color: #fff;
+    color: #000;
+    padding: 1rem 1.5rem;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.banner-text a:hover {
+    color: blue;
+}
+
+/*.................... slider-css....................... */
+
+/* .slider-shop {
+    margin-top: 40rem;
+    font-size: 10rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    background-image: url('https://cdn.pixabay.com/photo/2017/01/25/17/20/lionel-2008448__340.jpg');
+    -webkit-background-clip: text;
+    color: transparent;
+} */
+
+.slider {
+    height: 30rem;
+    margin: auto;
+    position: relative;
+    width: 90vw;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.slide-item {
+    display: flex;
+    width: calc(25rem * 16);
+    animation: scroll 10s linear infinite reverse;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-250px * 8));
+    }
+}
+
+.slide-item:hover {
+    animation-play-state: paused;
+}
+
+.slide-img {
+    height: 200px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    perspective: 100px;
+}
+
+.slide-img img {
+    width: 100%;
+    transition: transform 1s;
+}
+
+.slide-img img:hover {
+    transform: translateZ(20px);
+}
+
+/* .................................................... */
+
+/*.............. feature css............ */
+
+.features-point {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border: 1px solid #ddd;
+    margin-right: 2.5rem;
+}
+
+.icon-text-wrap {
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-text-wrap i {
+    font-size: 3rem;
+    color: #d19c97;
+}
+
+.icon-text-wrap span {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-left: 2rem;
+}
+
+/* ............................. */
+
+/*......... category css.............. */
+
+.category-item {
+    border: 1px solid #ccc;
+    padding: 3rem;
+    margin-right: 2.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 5rem;
+}
+
+.category-item .category-img img {
+    width: 100%;
+    height: 30rem;
+}
+
+.category-item .product-count {
+    text-align: right;
+    margin-bottom: 1rem;
+}
+
+.category-item .category-type h4 {
+    font-size: 2.5rem;
+}
+
+/* ........................ */
+
+/*............ offer-css ...............*/
+.offer-banner {
+    background-color: #f5f5f5 !important;
+    margin-bottom: 50px;
+    position: relative;
+    margin-right: 25px;
+}
+
+.offer-banner img {
+    position: absolute;
+    max-width: 50%;
+    max-height: 90%;
+    bottom: 0;
+    z-index: 100;
+    float: left;
+}
+
+.offer-banner .offer-text {
+    text-align: right;
+    padding: 40px;
+}
+
+.offer-banner .offer-text h5 {
+    color: #d19c97 !important;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 400;
+}
+
+.offer-banner .offer-text h3 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.offer-banner .offer-text button {
+    padding: 15px 30px;
+    color: #d19c97 !important;
+    border: 1px solid #d19c97;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* ....................... */
+
+/* ...........card css.................. */
+.card {
+    border: 1px solid #ddd;
+    margin-right: 2.5rem;
+    margin-bottom: 5rem;
+}
+
+.trending-heading {
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.card .card-img {
+    overflow: hidden;
+}
+
+.card .card-img img {
+    width: 100%;
+    height: 25rem;
+    transition: ease-in 0.5s;
+}
+
+.card-img img:hover {
+    transform: scale(1.1);
+}
+
+.card-product-details {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 1.5rem;
+}
+
+.card .card-product-details .card-product-name {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.card .card-product-price {
+    display: flex;
+    justify-content: center;
+}
+
+.card .card-product-details .card-product-price h6 {
+    font-size: 1.6rem;
+    padding: 5px;
+    font-weight: 500;
+}
+
+.card-product-price .last-price {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.card .card-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+
+.card .card-footer a {
+    color: #d19c97;
+    font-size: 1.4rem;
+    transition: color 0.5s;
+}
+
+.card .card-footer a:hover {
+    color: rgb(71, 60, 81);
+}
+
+/* .................................... */
+
+/*............. update css......... */
+.stay-updated {
+    background-color: #dee1ec;
+    margin-left: -5.5%;
+    margin-right: -5.5%;
+    text-align: center;
+    padding-top: 5rem;
+    padding-left: 32%;
+    padding-right: 32%;
+    padding-bottom: 8rem;
+}
+
+.stay-updated h1 {
+    line-height: 3;
+}
+
+.stay-updated p {
+    line-height: 2;
+    color: #666;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+.updated-inputs {
+    display: flex;
+}
+
+.updated-inputs .email-input {
+    flex: 1;
+    border-radius: 0;
+    height: 4.6rem;
+    border: none;
+    padding-left: 2rem;
+    font-size: 1.6rem;
+}
+
+.updated-inputs .email-input:focus {
+    outline: none;
+}
+
+.updated-inputs .email-btn {
+    border-radius: 0;
+    border: 1px solid #d19c97;
+    color: #000;
+    background-color: #d19c97;
+    padding: 1.3rem 3rem;
+    font-size: 1.6rem;
+}
+
+/* .................................. */
+
+/*............. footer-start.......... */
+.footer {
+    background-color: #edf1ff;
+    margin-left: -5.5%;
+    margin-right: -5.5%;
+    padding-left: 5.5%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+}
+
+.footer .footer-desc {
+    text-align: justify;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.footer .contact-list {
+    padding: 0;
+    list-style-type: none;
+    line-height: 2.5;
+}
+
+.footer .contact-list .icon {
+    color: #d19c97;
+    width: 25px;
+}
+
+.contact-list li {
+    font-size: 1.2rem;
+}
+
+.quick-links {
+    margin-left: 4rem;
+}
+
+.quick-links ul li {
+    font-size: 1.6rem;
+}
+
+.quick-links ul {
+    list-style-type: none;
+    padding: 0;
+    line-height: 2;
+}
+
+.quick-links ul a {
+    text-decoration: none;
+    color: #333;
+}
+
+.quick-links ul a i {
+    padding-right: 5px;
+}
+
+.footer .footer-input {
+    border: none;
+    width: 80%;
+    height: 50px;
+    margin-bottom: 25px;
+    font-size: 18px;
+    padding-left: 15px;
+    margin-top: 1.5rem;
+}
+
+.footer .footer-button {
+    border: 0;
+    background-color: #d19c97;
+    padding: 15px;
+    width: 80%;
+    font-size: 18px;
+}
+
+/* ......................................... */
+
+/*.................. shop css................ */
+
+.shop-header {
+    background-color: #fcf0f0;
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    margin-bottom: 2rem;
+}
+
+.shop-header h1 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    margin-bottom: 1.6rem;
+}
+
+.shop-header h3 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #d19c97;
+    font-weight: 400;
+}
+
+.sort-options {
+    text-align: right;
+    margin-right: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.sort-options select {
+    border: 1px solid #ddd;
+    height: 3.5rem;
+    width: 10rem;
+}
+
+.custom-checkbox {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+.custom-checkbox .input-check {
+    background-color: green;
+    height: 2rem;
+    width: 2rem;
+    margin-top: 1.2rem;
+}
+
+.custom-checkbox .input-label {
+    font-size: 1.6rem;
+    margin-top: 1.2rem;
+}
+
+.filter {
+    margin-top: 4rem;
+}
+
+.filter-div {
+    margin-top: -3.6rem;
+}
+
+/* .................................................. */
+
+
+/*.................... cart css.................... */
+
+.cart-details {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.cart-details table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-details img {
+    width: 6rem;
+    vertical-align: middle;
+}
+
+.cart-details table thead {
+    color: #666;
+    background-color: #edf1ff;
+    text-align: center;
+}
+
+.cart-details .table-img {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+th {
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+tbody {
+    text-align: center;
+    vertical-align: middle;
+}
+
+td {
+    border: 1px solid #edf1ff;
+    display: table-cell;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+}
+
+.quantity-input {
+    display: flex;
+    justify-content: center;
+}
+
+.quantity-input button {
+    background-color: #d19c97;
+    font-size: 2.4rem;
+    width: 3rem;
+    border-radius: 0px;
+}
+
+.quantity-input input {
+    width: 5rem;
+    border: 1px solid #ccc;
+    background-color: #edf1ff;
+    text-align: center;
+}
+
+.remove-icon {
+    padding: 5px;
+    background-color: #d19c97;
+}
+
+/* ................................................... */
+
+/*.................. cart-summary css................ */
+
+.cart-summary {
+    margin-top: 5rem;
+    margin-left: 2rem;
+}
+
+.cart-summary .coupon {
+    display: flex;
+    height: 5rem;
+}
+
+.cart-summary .coupon input {
+    border: 1px solid #ddd;
+    border-right: 0;
+    outline: none;
+    padding-left: 2rem;
+    width: 60%;
+}
+
+.cart-summary .coupon button {
+    background-color: #d19c97;
+    width: 40%;
+    border: none;
+}
+
+.cart-summary .cart-summary-body {
+    border: 1px solid #ddd;
+    margin-top: 5rem;
+    padding: 2rem;
+}
+
+.cart-summary-body .cart-summary-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-summary-item h6 {
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}
+
+.cart-summary-total {
+    border: 1px solid #ddd;
+    border-top: none;
+    padding: 2rem;
+}
+
+.cart-summary-total .total-head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.cart-summary-total .total-head h4 {
+    font-size: 1.4rem;
+}
+
+.proceed-input button {
+    background-color: #d19c97;
+    border: 0;
+    padding: 2rem;
+    width: 100%;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+/* .................................................... */
+
+/*................... Register css.................... */
+
+.register-area {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 50rem;
+    justify-content: space-around;
+    margin-bottom: 5rem;
+}
+
+.register-area input {
+    width: 30%;
+    height: 5rem;
+    border: 1px solid #ddd;
+    padding: 1rem;
+}
+
+.register-area button {
+    width: 30%;
+    height: 5rem;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    background-color: #d19c97;
+    color: white;
+    cursor: pointer;
+}
+
+/* ................................................... */
+
+/*................... login css.................... */
+
+.login-area {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 20rem;
+    justify-content: space-around;
+    margin-bottom: 5rem;
+}
+
+.login-area input {
+    width: 30%;
+    height: 5rem;
+    border: 1px solid #ddd;
+    padding: 1rem;
+}
+
+.login-area button {
+    width: 30%;
+    height: 5rem;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    background-color: #d19c97;
+    color: white;
+    cursor: pointer;
+}
+
+/* ................................................... */
+
+/*................... responsive..................... */
+
+@media only screen and (max-width:992px) {
+    .searchProduct {
+        display: flex;
+    }
+
+    .searchProduct input {
+        flex: 1;
+    }
+
+    .selectedProduct {
+        text-align: left;
+    }
+
+    .shop-menu ul {
+        display: block;
+    }
+
+    .shop-menu ul li {
+        padding: 1rem;
+    }
+
+    .banner {
+        float: none;
+    }
+
+    .stay-updated {
+        padding-top: 2.5rem;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 4rem;
+    }
+
+    .footer {
+        display: block;
+    }
+}
+
+/* .............................................. */

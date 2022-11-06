@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-com project</title>
+    <link rel="stylesheet" href="./common.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- header start -->
+    <div class="container">
+      <div class="header">
+        <div class="logo arrange-left w-25">
+          <h1>
+            <a href="./index.html"><span>E</span><span>Comm</span></a>
+          </h1>
+        </div>
+        <div class="searchProduct arrange-left w-50">
+          <input type="text" placeholder="search for products" />
+          <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="selectedProduct arrange-left w-25">
+          <button class="common-btn">
+            <i class="fa-solid fa-heart"></i><span>0</span>
+          </button>
+          <button class="common-btn">
+            <a href="./cart.html"
+              ><i class="fa-solid fa-cart-shopping"></i><span>0</span></a
+            >
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- header-end -->
+
+    <!-- divider-start -->
+    <div class="full-banner-wrapper">
+      <!-- banner-start-->
+      <div class="container next-row">
+        <div class="banner-area category-list arrange-left w-25">
+          <div class="list-header">
+            <h4>Categories</h4>
+            <span><i class="fa-solid fa-angle-down"></i></span>
+          </div>
+          <ul>
+            <li><a href="">Shirts</a></li>
+            <li><a href="">Shoes</a></li>
+            <li><a href="">Tshirts</a></li>
+            <li><a href="">Mobile</a></li>
+            <li><a href="">Laptop</a></li>
+            <li><a href="">Jackets</a></li>
+            <li><a href="">Headphone</a></li>
+            <li><a href="">Ladies</a></li>
+          </ul>
+        </div>
+
+        <div class="w-75 arrange-left">
+          <div class="shop-menu">
+            <ul class="left-menu-list">
+              <li><a href="">Home</a></li>
+              <li><a href="./shop.html">Shop</a></li>
+              <li class="dropdown-head">
+                <a href=""
+                  >Product Details <i class="fa-solid fa-angle-down"></i
+                ></a>
+                <ul class="dropdown">
+                  <li><a href="./cart.html">Cart</a></li>
+                  <li><a href="">Checkout</a></li>
+                </ul>
+              </li>
+              <li><a href="">Contact</a></li>
+            </ul>
+
+            <ul class="right-menu-list">
+              <li><a href="./login.html">Login</a></li>
+              <li><a href="./register.html">Register</a></li>
+            </ul>
+          </div>
+
+          <div class="banner">
+            <img
+              src="https://cdn.pixabay.com/photo/2017/08/06/17/58/people-2594683__340.jpg"
+              alt=""
+            />
+            <div class="banner-text">
+              <h4>10% off Your First Order</h4>
+              <h3>Fashionable Dress</h3>
+              <a class="shop-now" href="">Shop Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- banner-end -->
+
+      <!-- slider-start -->
+      <!-- <div class="container next-row">
+        <div class="slider">
+          <div class="slide-item">
+            <div class="slide-img">
+              <img
+                src="https://cdn.pixabay.com/photo/2017/07/15/19/42/train-track-2507499__340.jpg"
+                alt=""
+              />
+            </div>
+            <div class="slide-img">
+              <img
+                src="https://cdn.pixabay.com/photo/2015/02/02/11/09/office-620822__340.jpg"
+                alt=""
+              />
+            </div>
+            <div class="slide-img">
+              <img
+                src="https://cdn.pixabay.com/photo/2016/11/03/18/19/social-media-1795578__340.jpg"
+                alt=""
+              />
+            </div>
+            <div class="slide-img">
+              <img
+                src="https://cdn.pixabay.com/photo/2016/11/20/08/33/camera-1842202__340.jpg"
+                alt=""
+              />
+            </div>
+            <div class="slide-img">
+              <img
+                src="https://cdn.pixabay.com/photo/2016/12/09/11/33/smartphone-1894723__340.jpg"
+                alt=""
+              />
+            </div>
+            <div class="slide-img">
+              <img
+                src="https://cdn.pixabay.com/photo/2016/03/27/19/43/samsung-1283938__340.jpg"
+                alt=""
+              />
+            </div>
+            <div class="slide-img">
+              <img
+                src="https://cdn.pixabay.com/photo/2016/11/29/12/30/phone-1869510__340.jpg"
+                alt=""
+              />
+            </div>
+            <div class="slide-img">
+              <img
+                src="https://cdn.pixabay.com/photo/2016/12/19/08/39/mobile-phone-1917737__340.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="slide-img">
+              <img
+                src="https://cdn.pixabay.com/photo/2017/07/15/19/42/train-track-2507499__340.jpg"
+                alt=""
+              />
+            </div>
+            <div class="slide-img">
+              <img
+                src="https://cdn.pixabay.com/photo/2015/02/02/11/09/office-620822__340.jpg"
+                alt=""
+              />
+            </div>
+            <div class="slide-img">
+              <img
+                src="https://cdn.pixabay.com/photo/2016/11/03/18/19/social-media-1795578__340.jpg"
+                alt=""
+              />
+            </div>
+            <div class="slide-img">
+              <img
+                src="https://cdn.pixabay.com/photo/2016/11/20/08/33/camera-1842202__340.jpg"
+                alt=""
+              />
+            </div>
+            <div class="slide-img">
+              <img
+                src="https://cdn.pixabay.com/photo/2016/12/09/11/33/smartphone-1894723__340.jpg"
+                alt=""
+              />
+            </div>
+            <div class="slide-img">
+              <img
+                src="https://cdn.pixabay.com/photo/2016/03/27/19/43/samsung-1283938__340.jpg"
+                alt=""
+              />
+            </div>
+            <div class="slide-img">
+              <img
+                src="https://cdn.pixabay.com/photo/2016/11/29/12/30/phone-1869510__340.jpg"
+                alt=""
+              />
+            </div>
+            <div class="slide-img">
+              <img
+                src="https://cdn.pixabay.com/photo/2016/12/19/08/39/mobile-phone-1917737__340.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <!-- slider-end -->
+
+      <!-- feature-start -->
+      <div class="container next-row">
+        <div class="w-25 arrange-left">
+          <div class="features-point">
+            <span class="icon-text-wrap">
+              <i class="fa-solid fa-check"></i>
+              <span>Quality Products</span>
+            </span>
+          </div>
+        </div>
+
+        <div class="w-25 arrange-left">
+          <div class="features-point">
+            <span class="icon-text-wrap">
+              <i class="fa-solid fa-truck-fast"></i>
+              <span>Free Shipping</span>
+            </span>
+          </div>
+        </div>
+
+        <div class="w-25 arrange-left">
+          <div class="features-point">
+            <span class="icon-text-wrap">
+              <i class="fa-solid fa-exchange"></i>
+              <span>14 days Return</span>
+            </span>
+          </div>
+        </div>
+
+        <div class="w-25 arrange-left">
+          <div class="features-point">
+            <span class="icon-text-wrap">
+              <i class="fa-solid fa-phone-volume"></i>
+              <span>24/7 support</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- feature-end -->
+
+      <!-- category-banner-start -->
+      <div class="container next-row">
+        <div class="w-33 arrange-left">
+          <div class="category-item">
+            <div class="product-count">20 Products</div>
+            <div class="category-img">
+              <img
+                src="https://cdn.pixabay.com/photo/2019/10/11/19/43/mannequin-4542623__340.jpg"
+                alt=""
+              />
+            </div>
+            <div class="category-type">
+              <h4>Men's</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-33 arrange-left">
+          <div class="category-item">
+            <div class="product-count">20 Products</div>
+            <div class="category-img">
+              <img
+                src="https://cdn.pixabay.com/photo/2016/10/15/02/40/girl-in-overalls-1741743__340.jpg"
+                alt=""
+              />
+            </div>
+            <div class="category-type">
+              <h4>Women's</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-33 arrange-left">
+          <div class="category-item">
+            <div class="product-count">20 Products</div>
+            <div class="category-img">
+              <img
+                src="https://cdn.pixabay.com/photo/2018/03/02/10/09/young-3192787__340.jpg"
+                alt=""
+              />
+            </div>
+            <div class="category-type">
+              <h4>Children</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- category-banner-end -->
+
+      <!-- offer-banner-start -->
+      <div class="container next-row">
+        <div class="w-50 arrange-left">
+          <div class="offer-banner">
+            <img
+              src="https://cdn.pixabay.com/photo/2020/03/22/07/33/lingerie-4956113__340.jpg"
+              alt="offer-img"
+            />
+            <div class="offer-text">
+              <h4>20% off the all order</h4>
+              <h3>Spring Collection</h3>
+              <button>Shop Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="w-50 arrange-left">
+          <div class="offer-banner">
+            <img
+              src="https://cdn.pixabay.com/photo/2016/11/18/17/48/female-1836089__340.jpg"
+              alt="offer-img"
+            />
+            <div class="offer-text">
+              <h4>20% off the all order</h4>
+              <h3>Winter Collection</h3>
+              <button>Shop Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- offer-banner-end -->
+    </div>
+    <!-- card start -->
+    <div class="container next-row">
+      <h1 class="trending-heading">Trending Products</h1>
+      <div class="w-25 arrange-left">
+        <div class="card">
+          <div class="card-img">
+            <img
+              src="https://cdn.pixabay.com/photo/2017/11/02/14/26/model-2911329__340.jpg"
+              alt=""
+            />
+          </div>
+          <div class="card-product-details">
+            <h6 class="card-product-name">colorful stylish shirt</h6>
+            <div class="card-product-price">
+              <h6 class="current-price">Rs.3500</h6>
+              <h6 class="last-price">Rs.3500</h6>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href=""><i class="fa-regular fa-eye"></i>View Details</a>
+            <a href=""><i class="fa-solid fa-cart-shopping"></i>Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-25 arrange-left">
+        <div class="card">
+          <div class="card-img">
+            <img
+              src="https://cdn.pixabay.com/photo/2019/07/22/13/31/model-4355146__340.jpg"
+              alt=""
+            />
+          </div>
+          <div class="card-product-details">
+            <h6 class="card-product-name">colorful stylish shirt</h6>
+            <div class="card-product-price">
+              <h6 class="current-price">Rs.3500</h6>
+              <h6 class="last-price">Rs.3500</h6>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href=""><i class="fa-regular fa-eye"></i>View Details</a>
+            <a href=""><i class="fa-solid fa-cart-shopping"></i>Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-25 arrange-left">
+        <div class="card">
+          <div class="card-img">
+            <img
+              src="https://cdn.pixabay.com/photo/2019/12/26/08/22/girl-4719899__340.jpg"
+              alt=""
+            />
+          </div>
+          <div class="card-product-details">
+            <h6 class="card-product-name">colorful stylish shirt</h6>
+            <div class="card-product-price">
+              <h6 class="current-price">Rs.3500</h6>
+              <h6 class="last-price">Rs.3500</h6>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href=""><i class="fa-regular fa-eye"></i>View Details</a>
+            <a href=""><i class="fa-solid fa-cart-shopping"></i>Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-25 arrange-left">
+        <div class="card">
+          <div class="card-img">
+            <img
+              src="https://cdn.pixabay.com/photo/2017/03/01/19/34/man-2109428__340.jpg"
+              alt=""
+            />
+          </div>
+          <div class="card-product-details">
+            <h6 class="card-product-name">colorful stylish shirt</h6>
+            <div class="card-product-price">
+              <h6 class="current-price">Rs.3500</h6>
+              <h6 class="last-price">Rs.3500</h6>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href=""><i class="fa-regular fa-eye"></i>View Details</a>
+            <a href=""><i class="fa-solid fa-cart-shopping"></i>Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-25 arrange-left">
+        <div class="card">
+          <div class="card-img">
+            <img
+              src="https://cdn.pixabay.com/photo/2017/11/02/14/26/model-2911329__340.jpg"
+              alt=""
+            />
+          </div>
+          <div class="card-product-details">
+            <h6 class="card-product-name">colorful stylish shirt</h6>
+            <div class="card-product-price">
+              <h6 class="current-price">Rs.3500</h6>
+              <h6 class="last-price">Rs.3500</h6>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href=""><i class="fa-regular fa-eye"></i>View Details</a>
+            <a href=""><i class="fa-solid fa-cart-shopping"></i>Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-25 arrange-left">
+        <div class="card">
+          <div class="card-img">
+            <img
+              src="https://cdn.pixabay.com/photo/2019/07/22/13/31/model-4355146__340.jpg"
+              alt=""
+            />
+          </div>
+          <div class="card-product-details">
+            <h6 class="card-product-name">colorful stylish shirt</h6>
+            <div class="card-product-price">
+              <h6 class="current-price">Rs.3500</h6>
+              <h6 class="last-price">Rs.3500</h6>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href=""><i class="fa-regular fa-eye"></i>View Details</a>
+            <a href=""><i class="fa-solid fa-cart-shopping"></i>Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-25 arrange-left">
+        <div class="card">
+          <div class="card-img">
+            <img
+              src="https://cdn.pixabay.com/photo/2019/12/26/08/22/girl-4719899__340.jpg"
+              alt=""
+            />
+          </div>
+          <div class="card-product-details">
+            <h6 class="card-product-name">colorful stylish shirt</h6>
+            <div class="card-product-price">
+              <h6 class="current-price">Rs.3500</h6>
+              <h6 class="last-price">Rs.3500</h6>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href=""><i class="fa-regular fa-eye"></i>View Details</a>
+            <a href=""><i class="fa-solid fa-cart-shopping"></i>Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-25 arrange-left">
+        <div class="card">
+          <div class="card-img">
+            <img
+              src="https://cdn.pixabay.com/photo/2017/03/01/19/34/man-2109428__340.jpg"
+              alt=""
+            />
+          </div>
+          <div class="card-product-details">
+            <h6 class="card-product-name">colorful stylish shirt</h6>
+            <div class="card-product-price">
+              <h6 class="current-price">Rs.3500</h6>
+              <h6 class="last-price">Rs.3500</h6>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href=""><i class="fa-regular fa-eye"></i>View Details</a>
+            <a href=""><i class="fa-solid fa-cart-shopping"></i>Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- card end -->
+
+    <!-- update-start -->
+    <div class="container next-row">
+      <div class="stay-updated">
+        <h1>Stay Updated</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+          perspiciatis vero nihil! Ipsam, consectetur corrupti?
+        </p>
+        <div class="updated-inputs">
+          <input
+            type="text"
+            class="email-input"
+            placeholder="Email Goes Here"
+          />
+          <button class="email-btn">Subscribe</button>
+        </div>
+      </div>
+    </div>
+    <!-- update-end -->
+
+    <!-- footer-start -->
+    <div class="container next-row">
+      <div class="footer">
+        <div class="w-25 arrange-left">
+          <div class="logo">
+            <h1><span>E</span><span>Comm</span></h1>
+          </div>
+          <p class="footer-desc">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat
+            placeat provident magni eveniet sequi, consectetur harum aspernatur
+            sit exercitationem accusantium!
+          </p>
+          <ul class="contact-list">
+            <li>
+              <i class="fa-solid fa-location-dot icon"></i
+              ><span>Swayambhu, Kathmandu</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope icon"></i
+              ><span>gyamzo@gmail.com</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone icon"></i><span>+977-9845222225</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="w-25 arrange-left quick-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li>
+              <a href=""><i class="fa fa-angle-right"></i><span>Home</span></a>
+            </li>
+            <li>
+              <a href=""><i class="fa fa-angle-right"></i><span>Home</span></a>
+            </li>
+            <li>
+              <a href=""><i class="fa fa-angle-right"></i><span>Home</span></a>
+            </li>
+            <li>
+              <a href=""><i class="fa fa-angle-right"></i><span>Home</span></a>
+            </li>
+            <li>
+              <a href=""><i class="fa fa-angle-right"></i><span>Home</span></a>
+            </li>
+            <li>
+              <a href=""><i class="fa fa-angle-right"></i><span>Home</span></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="w-25 arrange-left quick-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li>
+              <a href=""><i class="fa fa-angle-right"></i><span>Home</span></a>
+            </li>
+            <li>
+              <a href=""><i class="fa fa-angle-right"></i><span>Home</span></a>
+            </li>
+            <li>
+              <a href=""><i class="fa fa-angle-right"></i><span>Home</span></a>
+            </li>
+            <li>
+              <a href=""><i class="fa fa-angle-right"></i><span>Home</span></a>
+            </li>
+            <li>
+              <a href=""><i class="fa fa-angle-right"></i><span>Home</span></a>
+            </li>
+            <li>
+              <a href=""><i class="fa fa-angle-right"></i><span>Home</span></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="wid-25 arrange-left">
+          <h3>News Letter</h3>
+          <input type="text" class="footer-input" placeholder="Enter Name" />
+          <input type="text" class="footer-input" placeholder="Enter Email" />
+          <button class="footer-button">Subscribe</button>
+        </div>
+      </div>
+    </div>
+    <!-- footer-end -->
+
+    <!-- divider-end -->
+  </body>
+</html>
